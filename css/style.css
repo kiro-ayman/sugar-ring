@@ -727,3 +727,40 @@ img {
   width: 100%;
   overflow-x: hidden;
 }
+
+
+.cont {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  background-color: #fff4e6;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.ch {
+  flex: 1;
+  max-width: 300px;
+  height: auto;
+  position: relative;
+}
+
+.ch img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ch {
+    max-width: 90%;
+  }
+}
